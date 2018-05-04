@@ -27,14 +27,14 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">XKCD-react</h1>
+          <h1 className="App-title">xkcd-react</h1>
         </header>
         <SetComic getComic={this.getComic} currentComic={this.state.comicData.num}/>
         <Comic comicData={this.state.comicData}/>
       </div>
     );
   }
-  componentDidMount() {{this.getComic()}};
+  componentDidMount() {this.getComic()};
   
 }
 
