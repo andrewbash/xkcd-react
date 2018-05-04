@@ -12,7 +12,7 @@ class App extends React.Component {
 
   getComic = (num) => {
     // If there is no `num` param get the default url, otherwise load in the specific number
-    const url = num ? 'https://xkcd.com/' + num + '/info.0.json' : 'https://xkcd.com/info.0.json';
+    const url = 'https://xkcd.now.sh/' + (num ? num : '');
     fetch(url)
       .then(res => res.json())
       .then((out) => {

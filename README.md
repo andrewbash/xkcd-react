@@ -10,7 +10,7 @@ To start the development version just run `npm start` and navigate to localhost:
 
 ## Roadmap
 - [X] Use XKCD API to display comics
-- [ ] Make app usable without CORS enabled
+- [X] Make app usable without CORS enabled
 - [ ] Add input to select exact comic to view
 - [ ] Add some nice styles 🔥
 - [ ] ???
