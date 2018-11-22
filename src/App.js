@@ -20,7 +20,14 @@ class App extends React.Component {
           comicData: out
         })
       })
-      .catch(err => { throw err });
+      .catch(err => { 
+        return this.setState({
+          comicData: {
+            safe_title: "NOT FOUND",
+            alt: "Sorry, comic not found"
+          }
+        });
+      });
   }
 
   render() {
